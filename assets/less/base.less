@@ -1,0 +1,102 @@
+header.site-header {
+  position: relative;
+  height: 60px;
+  @media screen {
+    @media (min-width: 576px) {
+      height: 100px;
+    }
+    @media (min-width: 768px) {
+      height: 140px;
+    }
+    @media (min-width: 992px) {
+      height: 160px;
+    }
+  }
+  .site-branding {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .custom-logo-link {
+    max-width: 200px;
+    text-align: center;
+  }
+  .custom-logo {
+    padding: 15px 0 20px 0;
+    max-height: 100%;
+    width: auto;
+    z-index: 1;
+  }
+  .main-navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .nav-items {
+      list-style: none;
+      @media screen {
+        @media (max-width: 991.9px) {
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+          background: #fff;
+          transition: transform .5s ease;
+          &.mob-closed {
+            transform: translateY(-103%);
+            transition: transform .5s ease;
+          }
+        }
+      }
+    }
+  }
+  #mobMenuBtn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    color: @main_brand_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    svg {
+      height: 30px;
+    }
+  }
+  #mobMenuClose {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: @main_brand_color;
+    cursor: pointer;
+    svg {
+      height: 33px;
+    }
+  }
+}
+
+.admin-bar {
+  .site-header {
+    #mobMenuClose {
+      top: 61px;
+      @media screen {
+        @media (min-width: 782px) {
+          top: 47px;
+        }
+      }
+    }
+  }
+}

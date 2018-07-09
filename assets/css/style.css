@@ -1,0 +1,137 @@
+header.site-header {
+  position: relative;
+  height: 60px;
+}
+@media screen and (min-width: 576px) {
+  header.site-header {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header.site-header {
+    height: 140px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header.site-header {
+    height: 160px;
+  }
+}
+header.site-header .site-branding {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header.site-header .custom-logo-link {
+  max-width: 200px;
+  text-align: center;
+}
+header.site-header .custom-logo {
+  padding: 15px 0 20px 0;
+  max-height: 100%;
+  width: auto;
+  z-index: 1;
+}
+header.site-header .main-navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+header.site-header .main-navigation .nav-items {
+  list-style: none;
+}
+@media screen and (max-width: 991.9px) {
+  header.site-header .main-navigation .nav-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+  }
+  header.site-header .main-navigation .nav-items.mob-closed {
+    -webkit-transform: translateY(-103%);
+        -ms-transform: translateY(-103%);
+            transform: translateY(-103%);
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+  }
+}
+header.site-header #mobMenuBtn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  color: #2a00ba;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+header.site-header #mobMenuBtn svg {
+  height: 30px;
+}
+header.site-header #mobMenuClose {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #2a00ba;
+  cursor: pointer;
+}
+header.site-header #mobMenuClose svg {
+  height: 33px;
+}
+.admin-bar .site-header #mobMenuClose {
+  top: 61px;
+}
+@media screen and (min-width: 782px) {
+  .admin-bar .site-header #mobMenuClose {
+    top: 47px;
+  }
+}
